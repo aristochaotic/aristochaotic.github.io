@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="resume">
+  <h1>{{ .Title }}</h1>
+  <div class="pdf-container">
+    <object
+      data="{{ "/awright_resume.pdf" | absURL }}"
+      type="application/pdf"
+      width="100%"
+      height="900">
+      <p>Your browser does not support embedded PDFs.
+         <a href="{{ "/awright_resume.pdf" | absURL }}">Download the PDF</a> instead.</p>
+    </object>
+  </div>
+</article>
+{{ end }}
